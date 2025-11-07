@@ -5,8 +5,7 @@ export default function About() {
     <section className="py-16">
       <SectionHeading title="Über mich" />
       <p className="text-gray-700 leading-relaxed">
-        Ich liebe es, moderne Webseiten zu entwickeln und Ideen in Design und Code zu verwandeln.
-        Der Fokus liegt auf sauberen Strukturen, klaren Farben und guter Benutzererfahrung.
+Ich heiße Ibrahim Can Uyan. Ich arbeite an meiner Zukunft als Webentwickler. Ich liebe es, Ideen in moderne, performante Webseiten zu verwandeln – mit klarem Design, sauberen Strukturen und Fokus auf Benutzererlebnis. Mein Ziel ist es, digitale Auftritte zu schaffen, die technisch stark und visuell überzeugend sind.
       </p>
     </section>
   )
