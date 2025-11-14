@@ -1,22 +1,21 @@
-import Hero from './sections/hero'
-import About from './sections/about'
-import Skills from './sections/skills'
-import Projects from './sections/project'
-import Hobbies from './sections/hobbies'
-import Contact from './sections/contact'
-import Container from './components/container'
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar.jsx";
+
+import Home from "./pages/home.jsx";
+import About from "./sections/about.jsx";
+import Projects from "./sections/project.jsx";
+import Contact from "./sections/contact.jsx";
 
 export default function App() {
   return (
-    <main className="font-poppins text-gray-900 bg-white min-h-screen w-full">
-      <Container>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Hobbies />
-        <Contact />
-      </Container>
-    </main>
-  )
+    <>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+    </>
+  );
 }
