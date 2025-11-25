@@ -1,27 +1,5 @@
 [
-    {
-        "en": "Day",
-        "de": "Der Tag"
-    },
-    {
-        "en": "Night",
-        "de": "Die Nacht"
-    },
-    {
-        "en": "Sun",
-        "de": "Die Sonne"
-    },
-    {
-        "en": "Moon",
-        "de": "Der Mond"
-    },
-    {
-        "en": "January",
-        "de": "Januar"
-    },
-    {
-        "en": "February",
-        "de": "Februar"
-    }
-
+  { "word": "apple", "translation": "Apfel" },
+  { "word": "house", "translation": "Haus" },
+  { "word": "car", "translation": "Auto" }
 ]
