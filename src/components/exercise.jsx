@@ -1,20 +1,30 @@
-import { Link } from "react-router-dom";
+import { List, ListItem } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
+import { Link } from "@chakra-ui/react";
 
 export default function LinkList() {
-    return (
-        <ul>
-            <li>
-                <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="/about">Über mich</Link>
-            </li>
-            <li>
-                <Link to="/projects">Projekte</Link>
-            </li>
-            <li>
-                <Link to="/contact">Kontakt</Link>
-            </li>
-        </ul>
-    );
+  return (
+    <List spacing={2}>
+      <ListItem>
+        <Link as={RouterLink} to="/" color="blue.500" _hover={{ color: "blue.700" }}>
+          Home
+        </Link>
+      </ListItem>
+      <ListItem>
+        <Link as={RouterLink} to="/about" color="blue.500" _hover={{ color: "blue.700" }}>
+          Über mich
+        </Link>
+      </ListItem>
+      <ListItem>
+        <Link as={RouterLink} to="/projects" color="blue.500" _hover={{ color: "blue.700" }}>
+          Projekte
+        </Link>
+      </ListItem>
+      <ListItem>
+        <Link as={RouterLink} to="/contact" color="blue.500" _hover={{ color: "blue.700" }}>
+          Kontakt
+        </Link>
+      </ListItem>
+    </List>
+  );
 }

@@ -18,7 +18,7 @@ export default function Contact() {
     setIsSubmitted(true);
   }
   return (
-    <main className="font-poppins text-sky-900 bg-white min-h-screen w-full">
+    <main className="font-poppins text-sky-900 bg-white min-h-screen w-full pt-[70px] md:pt-[85px]">
       <Container>
         {!isSubmitted ? (
           <ContactForm onSubmitSuccess={handleSuccess} />

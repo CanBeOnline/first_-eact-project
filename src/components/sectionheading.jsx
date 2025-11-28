@@ -1,7 +1,16 @@
+import { Heading } from "@chakra-ui/react";
+
 export default function SectionHeading({ title }) {
   return (
-    <h2 className="text-3xl font-bold text-brand-700 mb-6">
+    <Heading
+      as="h2"
+      size="2xl"
+      fontWeight="bold"
+      color="brand.700"
+      mb={6}
+      fontFamily="heading"
+    >
       {title}
-    </h2>
-  )
+    </Heading>
+  );
 }

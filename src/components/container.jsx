@@ -1,8 +1,9 @@
+import { Box } from "@chakra-ui/react";
 
-export default function Container({ children }) {
+export default function Container({ children, maxW = "6xl", py = 12, px = 4 }) {
   return (
-    <div className="max-w-screen-lg mx-auto px-4 py-12">
+    <Box maxW={maxW} mx="auto" px={px} py={py}>
       {children}
-    </div>
-  )
+    </Box>
+  );
 }

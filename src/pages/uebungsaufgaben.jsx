@@ -11,7 +11,7 @@ import vocabulary from "../data/vocabulary.json";
 import VocabularyGame from "../components/VocabularyGame.jsx";
 import ItunesDisplay from "../components/ItunesDisplay.jsx";
 import searchItunes from "../api/searchItunes.mjs";
-
+import LikeButton from "../components/LikeButton.jsx";
 
 
 
@@ -44,7 +44,7 @@ import searchItunes from "../api/searchItunes.mjs";
       return (
 
 
-        <main className="font-poppins text-sky-900 bg-white min-h-screen w-full">
+        <main className="font-poppins text-sky-900 bg-white min-h-screen w-full pt-[70px] md:pt-[85px]">
             <Container>
                 <div className="flex flex-col items-center gap-8">
                     <Counter />
@@ -55,6 +55,7 @@ import searchItunes from "../api/searchItunes.mjs";
                     <Expression />
                     <ValidatedForm />
                     <VocabularyGame vocabulary={vocabulary} />
+                    <LikeButton />
                     <ItunesDisplay />
                     <section className="mt-8">
                         <h2 className="text-xl font-semibold mb-2">iTunes Suche</h2>

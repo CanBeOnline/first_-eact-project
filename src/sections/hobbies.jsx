@@ -1,14 +1,21 @@
-import SectionHeading from '../components/SectionHeading'
+import { Box, Wrap, WrapItem, Text } from "@chakra-ui/react";
+import SectionHeading from "../components/SectionHeading";
 
 export default function Hobbies() {
   return (
-    <section className="py-16">
+    <Box as="section" py={16}>
       <SectionHeading title="Hobbys" />
-      <ul className="flex flex-wrap gap-4 text-gray-700">
-        <li>✈️ Reisen</li>
-        <li>📷 Fotografie</li>
-        <li>🎨 Design</li>
-      </ul>
-    </section>
-  )
+      <Wrap spacing={4} mt={6}>
+        <WrapItem>
+          <Text color="gray.700">✈️ Reisen</Text>
+        </WrapItem>
+        <WrapItem>
+          <Text color="gray.700">📷 Fotografie</Text>
+        </WrapItem>
+        <WrapItem>
+          <Text color="gray.700">🎨 Design</Text>
+        </WrapItem>
+      </Wrap>
+    </Box>
+  );
 }
